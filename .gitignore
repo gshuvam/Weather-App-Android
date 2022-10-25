@@ -1,0 +1,11 @@
+/Source Code/*.iml
+/Source Code/.gradle
+/Source Code/local.properties
+/Source Code/.idea/caches/build_file_checksums.ser
+/Source Code/.idea/libraries
+/Source Code/.idea/modules.xml
+/Source Code/.idea/workspace.xml
+/Source Code/.DS_Store
+/Source Code/build
+/Source Code/captures
+/Source Code/.externalNativeBuild

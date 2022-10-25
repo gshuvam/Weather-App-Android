@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/day_background"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/weatherImage"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Weather Mood"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="110sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/tempDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="\u2103"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/temp"
+        app:layout_constraintTop_toTopOf="@+id/temp" />
+
+    <TextView
+        android:id="@+id/weatherInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="@android:string/status_bar_notification_info_overflow"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/temp"
+        app:layout_constraintTop_toTopOf="@+id/temp" />
+
+    <TextView
+        android:id="@+id/feelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="316dp"
+        android:includeFontPadding="true"
+        android:text="Feels Like : "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Maximum Temperature : "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelsLike" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Minimum Temperature : "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxTemp" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Pressure : "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minTemp" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Humidity : "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressure" />
+
+    <TextView
+        android:id="@+id/weatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="xyz"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/weatherInfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weatherInfo"
+        app:layout_constraintTop_toTopOf="@+id/weatherInfo" />
+
+    <TextView
+        android:id="@+id/feelslikeval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsLike"
+        app:layout_constraintStart_toEndOf="@+id/feelsLike"
+        app:layout_constraintTop_toTopOf="@+id/feelsLike"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/maxTempVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/maxTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/maxTemp"
+        app:layout_constraintTop_toTopOf="@+id/maxTemp" />
+
+    <TextView
+        android:id="@+id/minTempVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minTemp"
+        app:layout_constraintStart_toEndOf="@+id/minTemp"
+        app:layout_constraintTop_toTopOf="@+id/minTemp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pressureVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pressure"
+        app:layout_constraintStart_toEndOf="@+id/pressure" />
+
+    <TextView
+        android:id="@+id/humidityVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/humidity"
+        app:layout_constraintStart_toEndOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/maxTempDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="\u2103"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maxTempVal"
+        app:layout_constraintStart_toEndOf="@+id/maxTempVal" />
+
+    <TextView
+        android:id="@+id/minTempDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="\u2103"
+        android:textColor="@color/white"
+        android:textFontWeight="900"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/minTempVal"
+        app:layout_constraintStart_toEndOf="@+id/minTempVal" />
+
+</android.support.constraint.ConstraintLayout>

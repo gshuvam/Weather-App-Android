@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">WeatherMe</string>
+    <string name="image">image</string>
+    <string name="todo">TODO</string>
+    <string name="enter_your_city">Enter Your City</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="pressure">Pressure :</string>
+    <string name="humidity">Humidity :</string>
+    <string name="feels_like">Feels Like :</string>
+    <string name="weather_mood">Weather Mood</string>
+</resources>

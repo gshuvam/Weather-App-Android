@@ -1,4 +1,4 @@
-# com.shuvam.WeatherMe
+# Android Weather App
 Weatheme(com.shuva.WeatherMe) is a free app available in our repository with which you can view weather anytime anywhere.</br>
 <h2>Features</h2></br>
 <ul>
@@ -12,6 +12,13 @@ Weatheme(com.shuva.WeatherMe) is a free app available in our repository with whi
   <li>	We DO NOT store your data</li>
   <li>	Our app needs no permission, not even location permission</li>
 </ul></br>
+
+## Installation
+<br/>
+   Go to Apk File folder and install the APK
+<br/>
+
+#
 
 <h2>Screenshots</h2></br>
 <div class="row">
